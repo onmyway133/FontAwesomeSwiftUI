@@ -10,10 +10,17 @@ Use FontAwesome 5 in your SwiftUI at ease.
 
 ## Usage
 
-For iOS, you can register fonts programmatically instead of declaring in `Info.plist`
+For iOS, to register fonts programmatically instead of declaring in `Info.plist`, you can use below `register` method.
 
 ```swift
 FontAwesome.register()
+```
+
+For macOS, you only need to declare fonts path, copy below to `Info.plist`
+
+```xml
+<key>ATSApplicationFontsPath</key>
+<string>.</string>
 ```
 
 To find which icon name for which style, consult [fontawesome.com website](https://fontawesome.com/icons?s=brands)
