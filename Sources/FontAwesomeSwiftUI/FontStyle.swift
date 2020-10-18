@@ -14,7 +14,7 @@ public enum FontStyle: String, CaseIterable {
 
     public var familyName: String {
         switch self {
-        case .brands:
+        case .brand:
             return "Font Awesome 5 Brands"
         case .regular, .solid:
             return "Font Awesome 5 Free"
