@@ -5,20 +5,21 @@
 Use FontAwesome 5 in your SwiftUI at ease.
 
 - [x] FontAwesome 5 free versions
+- [x] Support 3 styles: regular, brand, solid
 - [x] Support iOS, macOS, tvOS, watchOS
 
 ## Usage
 
-For iOS, you can register fonts programmatically instead of declaring in Info.plist
+For iOS, you can register fonts programmatically instead of declaring in `Info.plist`
 
 ```swift
 FontAwesome.register()
 ```
 
-Then specify `Icon` and `FontStyle`
+To find which icon name for which style, consult [fontawesome.com website](https://fontawesome.com/icons?s=brands)
 
 ```swift
-Text(Icon.aws.rawValue)
+Text("aws")
     .font(.awesome(style: .brand, size: 20))
     .foregroundColor(.white)
 ```
@@ -29,7 +30,7 @@ Text(Icon.aws.rawValue)
 Add EasyStash as a dependency to your Package.swift. For more information, please see the [Swift Package Manager documentation](https://github.com/apple/swift-package-manager/tree/master/Documentation).
 
 ```swift
-.package(url: "https://github.com/onmyway133/FontAwesomeSwiftUI", from: "1.0.0")
+.package(url: "https://github.com/onmyway133/FontAwesomeSwiftUI", from: "1.0.2")
 ```
 
 **FontAwesomeSwiftUI** can also be installed manually. Just download and drop `Sources` folders in your project.
@@ -37,10 +38,6 @@ Add EasyStash as a dependency to your Package.swift. For more information, pleas
 ## Author
 
 Khoa Pham, onmyway133@gmail.com
-
-## Credit
-
-- [thii](https://github.com/thii/FontAwesome.swift) for icon enums
 
 ## License
 
