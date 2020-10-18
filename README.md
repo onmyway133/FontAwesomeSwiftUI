@@ -30,7 +30,7 @@ Text("aws")
 Add EasyStash as a dependency to your Package.swift. For more information, please see the [Swift Package Manager documentation](https://github.com/apple/swift-package-manager/tree/master/Documentation).
 
 ```swift
-.package(url: "https://github.com/onmyway133/FontAwesomeSwiftUI", from: "1.0.2")
+.package(url: "https://github.com/onmyway133/FontAwesomeSwiftUI", from: "1.0.3")
 ```
 
 **FontAwesomeSwiftUI** can also be installed manually. Just download and drop `Sources` folders in your project.
