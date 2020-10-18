@@ -24,7 +24,7 @@ let package = Package(
             name: "FontAwesomeSwiftUI",
             dependencies: [],
             resources: [
-                .copy("Resource")
+                .process("Resource")
             ]
         ),
         .testTarget(

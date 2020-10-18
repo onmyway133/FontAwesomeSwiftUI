@@ -39,7 +39,6 @@ final class FontRegister {
     #endif
 
     private func url(fontName: String) -> URL? {
-        let bundle = Bundle(for: FontRegister.self)
-        return bundle.url(forResource: fontName, withExtension: "otf")
+        return Bundle.module.url(forResource: fontName, withExtension: "otf")
     }
 }

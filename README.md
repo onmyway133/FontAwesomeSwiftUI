@@ -9,14 +9,16 @@ Use FontAwesome 5 in your SwiftUI at ease.
 
 ## Usage
 
-You need to register fonts before
+For iOS, you can register fonts programmatically instead of declaring in Info.plist
 
 ```swift
 FontAwesome.register()
 ```
 
+Then specify `Icon` and `FontStyle`
+
 ```swift
-Text(FontAwesome.Icon.aws)
+Text(Icon.aws.rawValue)
     .font(.awesome(style: .brand, size: 20))
     .foregroundColor(.white)
 ```
