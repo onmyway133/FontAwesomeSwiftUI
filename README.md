@@ -35,7 +35,7 @@ Text(AwesomeIcon.aws.rawValue)
 ## Installation
 
 **FontAwesomeSwiftUI** is available through [Swift Package Manager](https://swift.org/package-manager/).
-Add EasyStash as a dependency to your Package.swift. For more information, please see the [Swift Package Manager documentation](https://github.com/apple/swift-package-manager/tree/master/Documentation).
+Add FontAwesomeSwiftUI as a dependency to your Package.swift
 
 ```swift
 .package(url: "https://github.com/onmyway133/FontAwesomeSwiftUI", from: "1.0.4")
