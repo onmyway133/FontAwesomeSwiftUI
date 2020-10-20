@@ -27,7 +27,7 @@ For macOS, you only need to declare fonts path, copy below to `Info.plist`
 To find which icon name is for which style, consult [fontawesome.com website](https://fontawesome.com/icons?s=brands)
 
 ```swift
-Text(AwesomeIcon.aws.rawValue)
+Text(AwesomeIcon.aws.icon)
     .font(.awesome(style: .brand, size: 20))
     .foregroundColor(.white)
 ```
