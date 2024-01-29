@@ -12,6 +12,10 @@ public enum FontStyle: String, CaseIterable {
     case regular = "FontAwesome5Free-Regular"
     case solid = "FontAwesome5Free-Solid"
 
+    public var name: String {
+        return self.rawValue
+    }
+    
     public var familyName: String {
         switch self {
         case .brand:

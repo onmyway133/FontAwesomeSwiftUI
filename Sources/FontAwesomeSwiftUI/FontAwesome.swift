@@ -11,13 +11,13 @@ public struct FontAwesome {
     public static func register() {
         let register = FontRegister()
         FontStyle.allCases.forEach {
-            register.register(fontName: $0.rawValue)
+            register.register(fontName: $0.name)
         }
     }
 }
 
 public extension SwiftUI.Font {
     static func awesome(style: FontStyle, size: CGFloat) -> SwiftUI.Font {
-        return SwiftUI.Font.custom(style.rawValue, size: size)
+        return SwiftUI.Font.custom(style.name, size: size)
     }
 }

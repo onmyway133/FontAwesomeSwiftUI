@@ -1412,3 +1412,9 @@ public enum AwesomeIcon: String, CaseIterable {
     case youtubeSquare = "youtube-square"
     case zhihu = "zhihu"
 }
+
+extension AwesomeIcon {
+    public var icon: String {
+        return self.rawValue
+    }
+}
